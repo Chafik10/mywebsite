@@ -1,0 +1,498 @@
+
+html {
+    scroll-behavior: smooth;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color:#222;
+
+}
+a {
+    text-decoration: 0;
+}
+
+section {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #222;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+
+}
+header  .logo a {
+    font-size: 25px;
+    color: #f72121;
+}
+header  .logo a span {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center ;
+}
+.menu li  {
+    margin: 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 15px;
+}
+li a:hover {
+    background-color: #ff2020;
+}
+.btn-contact {
+    color: white;
+    font-size: 14px;
+    border: 2px solid red;
+    padding: 5px 50px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.btn-contact:hover {
+    background-color: red;
+    color: #fff;
+ 
+}
+
+.slider {
+    width: 100%;
+    height: 90vh;
+    background-image: url(2.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    animation: slide 20s infinite;
+    
+  }
+  
+  @keyframes slide {
+    25% {
+      background-image: url(2.png);
+    }
+    50% {
+      background-image: url(camel-tour-tunisia-sahara-4e2190d83d69.jpg);
+    }
+    100% {
+      background-image: url(29.jpg);
+    }
+  }
+
+  #About-us {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    width: 100%;
+}
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: aqua;
+    position: relative;
+    margin-left:15px;
+    font-size: 18px;
+
+}
+.title::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right {
+    width: 60%;
+}
+
+.left {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 0 10px #29d9d5;
+}
+.right h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.right p {
+    color: #999;
+    font: 14px;
+    margin-bottom: 36px;
+}
+.right a {
+    border: 1px solid aqua  ;
+    color: white;
+    font-size: 14px;
+    padding: 8px 25px;
+}
+.btn-read:hover{
+    background-color:#29d9d5;
+    color: #fff;
+
+}
+
+
+#places {
+    padding: 0 10% ;
+    margin-bottom: 50px;
+    border-radius:10px ;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 32px;
+    border-radius: 10px;
+}
+.box {
+    overflow: hidden;
+    position: relative;
+    height: 260px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.box .c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.box .c  h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin: 6%;
+
+}
+.box .c p {
+    padding: 40px;
+    font-size: 12px;
+}
+.box .c a {
+    
+    padding: 10px 60px;
+    border: 2px solid rgb(18, 18, 18);
+
+}
+
+.box:hover .c{
+    transform: translateX(0);
+}
+
+.sliderr input {
+	display: none;
+}
+.test {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 500px;
+	perspective: 1000px;
+	overflow: hidden;
+    background-image: url(zz.jpg);
+}
+.item {
+	top: 0;
+	position: absolute;
+	box-sizing: border-box;
+	background-color: #0A0220;
+	padding: 30px;
+	width: 450px;
+	text-align: center;
+	transition: transform 0.4s;
+	user-select: none;
+	cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+.item img {
+	width: 40%;
+	border-radius: 50%;
+	border: 13px solid #3B344D;
+}
+.item p {
+	color: #ddd;
+}
+.item h2 {
+	font-size: 14px;
+}
+.item h1 {
+	font-size: 14px;
+    color: red;;
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dots label {
+	display: block;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #413B52;
+	margin: 7px;
+	transition: transform 0.2s, color 0.2s;
+}
+
+/* First */
+#t-1:checked ~ .dots label[for="t-1"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-1:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-1:checked ~ .tess label[for="t-1"] {
+	z-index: 4;
+}
+#t-1:checked ~ .test label[for="t-2"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 3;
+}
+#t-1:checked ~ .test label[for="t-3"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 2;
+}
+#t-1:checked ~ .test label[for="t-4"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+	z-index: 1;
+}
+#t-1:checked ~ .test label[for="t-5"] {
+	transform: translateX(1200px) translateZ(-360px) rotateY(-45deg);
+}
+
+
+/* Second */
+#t-2:checked ~ .dots label[for="t-1"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .dots label[for="t-2"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-2:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .test label[for="t-1"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-2:checked ~ .test label[for="t-2"] {
+	z-index: 3;
+}
+#t-2:checked ~ .test label[for="t-3"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-2:checked ~ .test label[for="t-4"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 1;
+}
+#t-2:checked ~ .test label[for="t-5"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+}
+
+/* Third */
+#t-3:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .dots label[for="t-3"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-3:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .test label[for="t-1"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-3:checked ~ .test label[for="t-2"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-3:checked ~ .test label[for="t-3"] {
+	z-index: 3;
+}
+#t-3:checked ~ .test label[for="t-4"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-3:checked ~ .test label[for="t-5"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+}
+
+
+/* Fourth */
+#t-4:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .dots label[for="t-4"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-4:checked ~ .dots label[for="t-5"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .test label[for="t-1"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+}
+#t-4:checked ~ .test label[for="t-2"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-4:checked ~ .test label[for="t-3"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 2;
+}
+#t-4:checked ~ .test label[for="t-4"] {
+	z-index: 3;
+}
+#t-4:checked ~ .test label[for="t-5"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+}
+
+
+/* Fifth */
+#t-5:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-5:checked ~ .dots label[for="t-5"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-5:checked ~ .test label[for="t-1"] {
+	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#t-5:checked ~ .test label[for="t-2"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+	z-index: 1;
+}
+#t-5:checked ~ .test label[for="t-3"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+	z-index: 2;
+}
+#t-5:checked ~ .test label[for="t-4"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-5:checked ~ .test label[for="t-5"] {
+	z-index: 4;
+}
+
+
+#contact {
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+#contact form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-right {
+    display: flex;
+}
+
+
+.left-right .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600
+}
+#contact form input {
+    padding: 8px;
+
+    border: 1px solid #999;
+    border-radius: 5PX ;
+}
+
+textarea {
+    border-radius: 7PX;
+}
+
+#contact button {
+    width: 520PX;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    align-items: center;
+}
+#contact button:hover {
+    letter-spacing: 3px;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color:rgb(18, 18, 18);
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+
+    margin: 20PX;
+}   
+footer a {
+    color: #29d9d5;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin: 2px;
+  }
+
+  
